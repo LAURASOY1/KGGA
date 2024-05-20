@@ -1,0 +1,19 @@
+/* GuidePage.css */
+.guide-container {
+  margin: 20px;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.students-table th,
+.students-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.students-table th {
+  background-color: lightblue;
+}

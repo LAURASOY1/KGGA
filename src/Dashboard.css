@@ -1,0 +1,23 @@
+
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dashboard-card {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
