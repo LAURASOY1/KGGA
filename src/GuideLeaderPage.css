@@ -1,0 +1,37 @@
+/* GuideLeaderPage.css */
+
+.guide-leader-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.guide-leader-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.guide-leader-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.guide-leader-table th,
+.guide-leader-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.guide-leader-table th {
+  background-color: #f2f2f2;
+}
+
+.guide-leader-table th,
+.guide-leader-table td {
+  text-align: left;
+}
+
+.guide-leader-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
