@@ -1,5 +1,4 @@
-
-/* LoginPage.css */
+/* 
 .login-page-container {
   display: flex;
   flex-direction: column;
@@ -17,7 +16,7 @@
 
 .logo {
   width: 100px; /* Adjust size as needed */
-  margin-bottom: 10px;
+  /* margin-bottom: 10px;
 
 }
 
@@ -37,9 +36,9 @@
 .login-box form {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.login-box input {
+/* .login-box input {
   margin-bottom: 10px;
   padding: 8px;
   border-radius: 5px;
@@ -58,4 +57,67 @@
 
 .login-box button:hover {
   background-color: #6271f7;
+} */
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
 }
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: navy;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+

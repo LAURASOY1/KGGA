@@ -12,9 +12,11 @@ const LeaderTable = ({ leaders }) => {
           <tr>
             <th style={cellStyle}>Name</th>
             <th style={cellStyle}>Phone Number</th>
-            <th style={cellStyle}>Email</th>
             <th style={cellStyle}>County</th>
+            <th style={cellStyle}>Email</th>
             <th style={cellStyle}>Status</th>
+            <th style={cellStyle}>MembershipNo</th>
+            <th style={cellStyle}>Age</th>
           </tr>
         </thead>
         <tbody>
@@ -22,9 +24,11 @@ const LeaderTable = ({ leaders }) => {
             <tr key={index}>
               <td style={cellStyle}>{leader.name}</td>
               <td style={cellStyle}>{leader.phoneNumber}</td>
-              <td style={cellStyle}>{leader.email}</td>
               <td style={cellStyle}>{leader.county}</td>
+              <td style={cellStyle}>{leader.email}</td>
               <td style={cellStyle}>{leader.status}</td>
+              <td style={cellStyle}>{leader.MembershipNo}</td>
+              <td style={cellStyle}>{leader.age}</td>
             </tr>
           ))}
         </tbody>

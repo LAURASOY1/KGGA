@@ -8,6 +8,8 @@ import SchoolsPage from './SchoolsPage';
 import GuidePage from './GuidePage';
 import LeaderTable from './LeaderTable';
 import AddEventPage from "./AddEventPage";
+import InvoicesPage from "./InvoicesPage"; 
+import GuideLeaderPage from './GuideLeaderPage';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
         <Route path="/counties" element={<CountiesPage />} />
+        <Route path="/guide-leaders/:county" element={<GuideLeaderPage />} />
         <Route path="/schools/:county/:subcounty" element={<SchoolsPage />} />
         <Route path="/guide/:school" element={<GuidePage />} />
         <Route
@@ -23,6 +26,7 @@ function App() {
           element={<LeaderTable leaders={generateLeaders()} />}
         />
         <Route path="/events/new" element={<AddEventPage />} />
+        <Route path="/invoices" element={<InvoicesPage />} />
       </Routes>
     </Router>
   );
@@ -35,11 +39,11 @@ const generateLeaders = () => {
   // Generate your leaders data here
   return [
     {
-      name: "June",
+      name: "laura",
       phoneNumber: "123-456-7890",
-      email: "june@gmail.com",
+      email: "laurachepck@gmail.com",
       county: "Nairobi",
-      status: "Registered",
+      status: "Not registered",
     },
     {
       name: "Emma",

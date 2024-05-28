@@ -963,8 +963,16 @@ const AddEventPage = () => {
               required
             >
               <option value="">Select category</option>
-              <option value="empowerment">Empowerment</option>
-              <option value="leadership">Leadership</option>
+              <option value="empowerment">Unit Information</option>
+              <option value="leadership">
+                Adults
+                <div>
+                  <option value="leadership">Young Leaders</option>
+                  <option value="leadership">Bravo</option>
+                  <option value="leadership">Trevoil</option>
+                  <option value="leadership">Guide Leaders</option>
+                </div>
+              </option>
             </select>
           </div>
           <div style={styles.formGroup}>
@@ -1022,7 +1030,7 @@ const styles = {
     marginLeft: "15px",
   },
   heading: {
-    fontSize: "20px",
+    fontSize: "15px",
     marginBottom: "20px",
     fontWeight: "bold",
   },
@@ -1066,18 +1074,18 @@ const styles = {
     marginBottom: "10px",
   },
   eventImage: {
-    width: "50%", // Adjusted image size
-    height: "50%", // Maintain aspect ratio
+    width: "20%", // Adjusted image size
+    height: "10%", // Maintain aspect ratio
     marginBottom: "10px",
     borderRadius: "5px",
   },
   eventTitle: {
-    fontSize: "16px", // Reduced font size
+    fontSize: "10px", // Reduced font size
     marginBottom: "5px",
     fontWeight: "bold",
   },
   eventDescription: {
-    fontSize: "14px", // Reduced font size
+    fontSize: "8px", // Reduced font size
     marginBottom: "10px",
   },
 };

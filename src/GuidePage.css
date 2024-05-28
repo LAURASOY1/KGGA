@@ -1,5 +1,5 @@
 /* GuidePage.css */
-.guide-container {
+/* .guide-container {
   margin: 20px;
 }
 
@@ -16,4 +16,58 @@
 
 .students-table th {
   background-color: lightblue;
+} */
+
+
+
+
+
+
+
+
+
+.guide-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.guide-page-container h2 {
+  margin-bottom: 20px;
+  font-size: smaller;
+}
+
+.guide-page-container > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.guide-page-container p {
+  margin: 0;
+  font-size: small;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.students-table th,
+.students-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.search-input {
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 100%;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: space-between;
 }
