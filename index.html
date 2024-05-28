@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,18 +14,84 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <!-- Include React DOM library (development version) -->
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-
+    <!-- Include React Router DOM library -->
+    <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.js"></script>
     <!-- Include Babel to compile JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Your React component -->
+    <!-- Your React application code -->
     <script type="text/babel">
-        <div>
+        const { BrowserRouter: Router, Routes, Route, useNavigate } = ReactRouterDOM;
 
-        // Render the React component
+        const users = [
+            { username: 'admin', password: 'password1' },
+            { username: 'finance', password: 'password2' },
+            { username: 'hr', password: 'password3' },
+            { username: 'programmes', password: 'password4' },
+            { username: 'reception', password: 'password5' },
+        ];
+
+        function LoginPage() {
+            const navigate = useNavigate();
+            const [username, setUsername] = React.useState('');
+            const [password, setPassword] = React.useState('');
+
+            const handleSubmit = (e) => {
+                e.preventDefault();
+                const user = users.find(u => u.username === username && u.password === password);
+                if (user) {
+                    navigate('/dashboard');
+                } else {
+                    alert('Invalid credentials');
+                }
+            };
+
+            return (
+                <div className="login-container">
+                    <div className="login-box">
+                        <img src="/logo.png" alt="Logo" className="logo" />
+                        <h2>Admin Login</h2>
+                        <form onSubmit={handleSubmit}>
+                            <input
+                                type="text"
+                                placeholder="Username"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                                required
+                            />
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                            <button type="submit">Login</button>
+                        </form>
+                    </div>
+                </div>
+            );
+        }
+
+        function Dashboard() {
+            return <h1>Dashboard</h1>;
+        }
+
+        function App() {
+            return (
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<LoginPage />} />
+                        <Route path="/dashboard" element={<Dashboard />} />
+                        {/* Add other routes here */}
+                    </Routes>
+                </Router>
+            );
+        }
+
         ReactDOM.render(<App />, document.getElementById('root'));
-        </div>
     </script>
 </body>
 </html>
+
 
