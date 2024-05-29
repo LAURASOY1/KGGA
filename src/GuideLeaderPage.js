@@ -151,7 +151,7 @@
 
 
 import React from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import "./GuideLeaderPage.css"; // Import CSS file for styling
 
 const GuideLeaderPage = () => {
