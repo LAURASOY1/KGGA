@@ -155,7 +155,7 @@ import { useParams } from "react-router-dom";
 import "./GuideLeaderPage.css"; // Import CSS file for styling
 
 const GuideLeaderPage = () => {
-  const { county } = useParams();
+  // const { county } = useParams();
 
   // Dummy data for guide leaders
   const guideLeadersByCounty = {
