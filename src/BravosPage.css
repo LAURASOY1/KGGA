@@ -1,0 +1,113 @@
+/* TrefoilsPage.css and BravosPage.css can be the same */
+
+/* .page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table th,
+.table td {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+ */
+
+
+
+/* TrefoilsPage.css and BravosPage.css can be the same */
+
+/* .page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table th,
+.table td {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+ */
+
+
+.bravos-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bravos-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.bravos-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bravos-table th,
+.bravos-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.bravos-table th {
+  background-color: #f2f2f2;
+}
+
+.bravos-table th,
+.bravos-table td {
+  text-align: left;
+}
+
+.bravos-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

@@ -10,6 +10,8 @@ import LeaderTable from './LeaderTable';
 import AddEventPage from "./AddEventPage";
 import InvoicesPage from "./InvoicesPage"; 
 import GuideLeaderPage from './GuideLeaderPage';
+import TrefoilsPage from './TrefoilsPage'; // Import TrefoilsPage
+import BravosPage from './BravosPage';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         />
         <Route path="/events/new" element={<AddEventPage />} />
         <Route path="/invoices" element={<InvoicesPage />} />
+        <Route path="/trefoils" element={<TrefoilsPage />} /> {/* Trefoils route */}
+        <Route path="/bravos" element={<BravosPage />} /> {/* Bravos route */}
       </Routes>
     </Router>
   );
