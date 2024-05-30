@@ -245,36 +245,36 @@ const BravosPage = () => {
   // Dummy data for Bravos
   const bravos = [
     {
-      name: "James Smith",
+      name: "Joanna",
       membershipNo: "B001",
       county: "Nairobi",
       phoneNumber: "444-444-4444",
       email: "james@example.com",
-      age: 15,
+      age: 65,
     },
     {
-      name: "Ethan Williams",
+      name: "Ethane",
       membershipNo: "B002",
       county: "Kisumu",
       phoneNumber: "777-777-7777",
       email: "ethan@example.com",
-      age: 16,
+      age: 66,
     },
     {
-      name: "Lucas Johnson",
+      name: "Luca",
       membershipNo: "B003",
       county: "Nakuru",
       phoneNumber: "888-888-8888",
       email: "lucas@example.com",
-      age: 17,
+      age: 67,
     },
     {
-      name: "Mason Brown",
+      name: "Jane",
       membershipNo: "B004",
       county: "Mombasa",
       phoneNumber: "999-999-9999",
       email: "mason@example.com",
-      age: 18,
+      age: 68,
     },
   ];
 

@@ -244,28 +244,28 @@ const TrefoilsPage = () => {
   // Dummy data for Trefoils
   const trefoils = [
     {
-      name: "Alice Johnson",
+      name: "Alice",
       membershipNo: "T001",
       county: "Nairobi",
       phoneNumber: "123-456-7890",
       email: "alice@example.com",
-      age: 10,
+      age: 38,
     },
     {
-      name: "Sophia Lee",
+      name: "Sophia",
       membershipNo: "T002",
       county: "Kisumu",
       phoneNumber: "987-654-3210",
       email: "sophia@example.com",
-      age: 11,
+      age: 40,
     },
     {
-      name: "Isabella Brown",
+      name: "Isabella ",
       membershipNo: "T003",
       county: "Nakuru",
       phoneNumber: "555-555-5555",
       email: "isabella@example.com",
-      age: 12,
+      age: 45,
     },
     {
       name: "Mia Wilson",
@@ -273,7 +273,7 @@ const TrefoilsPage = () => {
       county: "Mombasa",
       phoneNumber: "111-222-3333",
       email: "mia@example.com",
-      age: 13,
+      age: 45,
     },
   ];
 

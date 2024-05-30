@@ -213,7 +213,7 @@ const GuideLeaderPage = () => {
     ],
     nakuru: [
       {
-        name: "William Garcia",
+        name: "Garcia",
         school: "Naivasha Girls",
         phoneNumber: "222-222-2222",
         email: "william@example.com",
@@ -225,7 +225,7 @@ const GuideLeaderPage = () => {
         email: "emma@example.com",
       },
       {
-        name: "James Robinson",
+        name: "JaRob",
         school: "Nakuru Academy",
         phoneNumber: "333-333-3333",
         email: "james@example.com",
@@ -239,7 +239,7 @@ const GuideLeaderPage = () => {
     ],
     mombasa: [
       {
-        name: "Liam Harris",
+        name: "Liam",
         school: "Mombasa High",
         phoneNumber: "777-888-9999",
         email: "liam@example.com",
@@ -251,13 +251,13 @@ const GuideLeaderPage = () => {
         email: "chloe@example.com",
       },
       {
-        name: "Ethan Martinez",
+        name: "Esther",
         school: "Mombasa Academy",
         phoneNumber: "555-444-3333",
         email: "ethan@example.com",
       },
       {
-        name: "Mia Brown",
+        name: "Mia ",
         school: "Mombasa International School",
         phoneNumber: "666-777-8888",
         email: "mia@example.com",
