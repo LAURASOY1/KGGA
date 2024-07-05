@@ -72,11 +72,18 @@
 
 
 
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import './SchoolsPage.css';
-import ReactHTMLTableToExcel from 'react-html-table-to-excel';
-import { PDFDownloadLink, Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import React from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import "./SchoolsPage.css";
+import { CSVLink } from "react-csv";
+import {
+  PDFDownloadLink,
+  Page,
+  Text,
+  View,
+  Document,
+  StyleSheet,
+} from "@react-pdf/renderer";
 
 // Dummy school names
 const schools = [
@@ -89,7 +96,7 @@ const schools = [
   "Lakeview Middle School",
   "Oak Ridge Academy",
   "Cedar Ridge Elementary",
-  "Hilltop High School"
+  "Hilltop High School",
 ];
 
 const SchoolsPage = () => {
@@ -103,24 +110,27 @@ const SchoolsPage = () => {
   // Styles for PDF
   const styles = StyleSheet.create({
     page: {
-      flexDirection: 'row',
-      backgroundColor: '#ffffff',
+      flexDirection: "row",
+      backgroundColor: "#ffffff",
     },
     section: {
       margin: 10,
       padding: 10,
-      flexGrow: 1
+      flexGrow: 1,
     },
     heading: {
       fontSize: 18,
       marginBottom: 10,
-      fontWeight: 'bold'
+      fontWeight: "bold",
     },
     schoolName: {
       fontSize: 14,
-      marginBottom: 5
-    }
+      marginBottom: 5,
+    },
   });
+
+  // Data for CSV export
+  const csvData = schools.map((school) => [school]);
 
   return (
     <div className="schools-container">
@@ -136,14 +146,13 @@ const SchoolsPage = () => {
       {/* Download buttons */}
       <div className="download-buttons">
         {/* Download as Excel */}
-        <ReactHTMLTableToExcel
-          id="test-table-xls-button"
+        <CSVLink
+          data={csvData}
+          filename={`schools_${subcounty}.csv`}
           className="download-button"
-          table="schools-table"
-          filename={`schools_${subcounty}`}
-          sheet="schools"
-          buttonText="Download as Excel"
-        />
+        >
+          Download as Excel
+        </CSVLink>
 
         {/* Download as PDF */}
         <PDFDownloadLink
@@ -153,7 +162,9 @@ const SchoolsPage = () => {
                 <View style={styles.section}>
                   <Text style={styles.heading}>Schools in {subcounty}</Text>
                   {schools.map((school, index) => (
-                    <Text key={index} style={styles.schoolName}>{school}</Text>
+                    <Text key={index} style={styles.schoolName}>
+                      {school}
+                    </Text>
                   ))}
                 </View>
               </Page>
@@ -161,29 +172,12 @@ const SchoolsPage = () => {
           }
           fileName={`schools_${subcounty}.pdf`}
         >
-          {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download as PDF')}
+          {({ blob, url, loading, error }) =>
+            loading ? "Loading document..." : "Download as PDF"
+          }
         </PDFDownloadLink>
       </div>
-      
-      {/* Table for Excel export */}
-      <table id="schools-table" style={{ display: 'none' }}>
-        <thead>
-          <tr>
-            <th>School Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          {schools.map((school, index) => (
-            <tr key={index}>
-              <td>{school}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
   );
 };
-
 export default SchoolsPage;
-
-

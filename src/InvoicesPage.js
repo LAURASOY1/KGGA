@@ -70,9 +70,8 @@ const InvoicesPage = () => {
             onChange={(e) => setSelectedCategory(e.target.value)}
           >
             <option value="All">All</option>
-            <option value="Young Unit">Young Unit</option>
+            <option value="Unit Information">Young Unit</option>
             <option value="Young Leader">Young Leader</option>
-            <option value="Adult">Adult</option>
           </select>
         </div>
         <div className="form-group">
